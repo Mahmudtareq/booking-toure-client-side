@@ -1,0 +1,9 @@
+.banner-page{
+    background-image: url("../../image/allheader/headerpage.jpg");
+    background-size: cover;
+    background-size:cover;
+    backface-visibility: hidden;
+    height: 300px;
+    
+
+}
