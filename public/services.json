@@ -1,0 +1,27 @@
+[
+    {
+        "name":"Rangamati",
+        "img":"https://i.ibb.co/chqJYmw/service.jpg","description":"Rangamati is the administrative headquarters of Rangamati Hill District in the Chittagong Hill Tracts of Bangladesh",
+        "price":"$ 150"
+    },
+
+    {
+        "name":"New York City","img":"https://i.ibb.co/GcXMQz9/service1.jpg","description":"New York, often called New York City to distinguish it from New York State, or NYC for short, is the most populous city in the United States","price":"$ 500"
+    },
+
+    {
+        "name":"Manali","img":"https://i.ibb.co/cggDKwT/service2.jpg","description":"Manali is a high-altitude Himalayan resort town in India’s northern Himachal Pradesh state. It has a reputation as a backpacking center ","price":"$ 250"
+    },
+
+    {
+        "name":"Pahalgam","img":"https://i.ibb.co/ypvmqcB/service3.jpg","description":"Pahalgam is a hill station in the north Indian state of Jammu and Kashmir. Mountain trails run northeast to Amarnath Cave","price":"$ 350"
+    },
+
+    {
+        "name":"Cox Bazar","img":"https://i.ibb.co/86xhrFD/service4.jpg","description":"It is famous mostly for its long natural sandy beach. It is located 150 km (93 mi) south of the city of Chittagong","price":"$ 150"
+    },
+    
+    {
+        "name":"Darjeeling","img":"https://i.ibb.co/QY48v1K/service5.jpg","description":"Darjeeling is a town in India's West Bengal state, in the Himalayan foothills. Once a summer resort for the British Raj elite","price":"$ 250"
+        }
+    ]

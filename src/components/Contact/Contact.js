@@ -13,13 +13,8 @@ const Contact = () => {
                     <NavLink className="text-white text-decoration-none" to="/home">Go Back Home</NavLink>
                 </button>
                 <h2 className="fs-1 mt-2 text-info">Contact Us</h2>
-
                 </div>
-                
-             
-             
             </div>
-
     <div>
         <div className="container overflow-hidden">
             <div className="row gx-4 shadow-lg">
@@ -29,7 +24,6 @@ const Contact = () => {
                     <p>31 park street, 5th Avenue,
                         Dhanmondy, Dhaka.</p>
                 </div>
-        
                 </div>
 
                 <div className="col-4 ">
@@ -73,8 +67,6 @@ const Contact = () => {
                     <input type="email" className="form-control" id="exampleFormControlInput1" placeholder="Your Email"/>
                     <br />
                     <input type="text" className="form-control" id="exampleFormControlInput1" placeholder="Subject"/>
-
-
                     </div>
                     <div className="mb-3">
                     
@@ -85,7 +77,6 @@ const Contact = () => {
 
                     </div>
                     
-
                 </div>
                             
             </div>

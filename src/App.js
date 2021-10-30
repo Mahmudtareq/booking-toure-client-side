@@ -8,10 +8,17 @@ import {
 import Home from './components/Home/Home';
 import Contact from './components/Contact/Contact';
 import AboutUs from './components/About/AboutUs';
+import Login from './components/LoginPage/Login';
+import AuthProvider from './context/AuthProvider';
+import AddService from './components/AddService/AddService';
+import MyOrder from './components/MyOrder/Myorder';
+import PrivateRoute from './components/LoginPage/PrivateRoute/PrivateRoute';
+import ShowAllServices from './components/ShowAllServices/ShowAllServices';
 
 function App() {
   return (
     <div className="App">
+      <AuthProvider>
       <Router>
         <Switch>
           <Route exact path="/">
@@ -26,9 +33,22 @@ function App() {
           <Route path="/about">
             <AboutUs></AboutUs>
           </Route>
+          <Route exact path="/addService">
+            <AddService></AddService>
+          </Route>
+          <PrivateRoute exact path="/myOrder/:serviceId">
+            <MyOrder></MyOrder>
+          </PrivateRoute>
+          <Route path ="/showAllServices">
+            <ShowAllServices></ShowAllServices>
+          </Route>
+          <Route exact path="/login">
+            <Login></Login>
+          </Route>
         </Switch>
     
     </Router>
+    </AuthProvider>
     </div>
   );
 }
