@@ -13,8 +13,8 @@ const MenuBar = () => {
         <>
         <Navbar className="p-3" bg="dark" variant="dark" sticky="top" collapseOnSelect expand="lg">
                 <Container>
-                    <Navbar.Brand className="text-primary" href="#home">
-                        TRraVio
+                    <Navbar.Brand className="text-info fs-6" href="#home">
+                    Incredible Vacations
                     </Navbar.Brand>
                     <Navbar.Toggle />
                     <Navbar.Collapse className="justify-content-end">

@@ -13,7 +13,7 @@ const OurServices = () => {
     return (
         <div>
             <div className="mt-4">
-            <h2>Our Most Popular Tours </h2>
+            <h2 className="text-info my-5">Our Most Popular Tours </h2>
             </div>
             <div className="main-service container my-5">
            

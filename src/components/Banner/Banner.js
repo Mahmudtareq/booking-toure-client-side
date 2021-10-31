@@ -43,8 +43,7 @@ const Banner = () => {
                 alt="Third slide"
                 />
                 <Carousel.Caption>
-                <h1>WELCOME 
-                      <small>  To The Travel</small>
+                <h1>WELCOME TO DAL LAKE
                 </h1>
                 <p>Where Would You Like To Go ?</p>
                 </Carousel.Caption>
