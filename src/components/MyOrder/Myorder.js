@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react";
 import { Card } from "react-bootstrap";
+import { useForm } from "react-hook-form";
 import { useParams } from "react-router";
 import useAuth from "../../hooks/useAuth";
 import Footer from "../Footer/Footer";
 import MenuBar from "../MenuBar/MenuBar";
-
 const Myorder =()=>{
     const {user} = useAuth();
     const {serviceId} = useParams();
@@ -14,6 +14,12 @@ const Myorder =()=>{
         .then(res=>res.json())
         .then(data=>setService(data));
     },[])
+    const {handleSubmit} = useForm();
+
+    const onSubmit = data => {
+
+        console.log(data);
+    }
     return(
     <div>
         <div>
@@ -35,27 +41,25 @@ const Myorder =()=>{
             </Card.Body>
             </Card>
 
-
-                   
-
                 </div>
                 <div className="col-lg-6 col-12">
-                    <h2 className="text-primary mb-4">Book This Tour</h2>
-                    <form>
-                        <input className="form-control" type="text" id="" placeholder="Your Name" value={user.displayName} />
-                        <br />
-                        <input className="form-control" type="email" name="" id="" placeholder="Your Email" value={user.email}/>
-                        <br />
-                        <input className="form-control" type="text" name="" id="" placeholder="Your Phone" />
-                        <br />
-                        <input className="form-control" type="text" name="" id="" placeholder="Your Tickets" />
-                        <br />
-                        <input className="form-control" type="text" name="" id="" placeholder="Date" />
-                        <br />
-                        <textarea  className="form-control" name="" id="" cols="5" rows="3" placeholder="Write Message"></textarea>
-                        <br />
-                        <input className="form-control bg-info" type="submit" value="Book Your Tour" />
-                    </form>
+                    <h2 className="text-primary mb-4">Book This Tour</h2>     
+                <form onSubmit={handleSubmit(onSubmit)}>
+                <input className="form-control" type="text" id="" placeholder="Your Name" value={user.displayName} />
+                <br />
+                <input className="form-control" type="email" name="" id="" placeholder="Your Email" value={user.email}/>
+                <br />
+                <input className="form-control" type="text" name="" id="" placeholder="Your Phone" />
+                <br />
+                <input className="form-control" type="text" name="" id="" placeholder="Your Tickets" />
+                <br />
+                <input className="form-control" type="text" name="" id="" placeholder="Date" />
+                <br />
+                <textarea  className="form-control" name="" id="" cols="5" rows="3" placeholder="Write Message"></textarea>
+                <br />
+                <input className="btn px-5 bg-primary" type="submit" value="Booking Your Order"/>
+            </form>
+                    
                 </div>
             
             </div>

@@ -41,28 +41,20 @@ const Login = () => {
                 <p className="fs-1 mt-2 text-black">LOGIN PAGE</p>
 
                 </div>
-                
-             
-             
             </div>
                      
 
             </div>
-            <div className="bg-light">
+            <div className="container">
                 <from>
-                    <h2 className="mb-3 text-info">Please Login</h2>
-                    <input className="form-control w-25  mx-auto" type="email"  name="" id="" placeholder="Email" required />
+                    <h2 className="my-5 text-info">Please Login</h2>
+                    <input className="form-control  w-50 mx-auto" type="email"  name="" id="" placeholder="Email" required />
                     <br />
-                    <input className="form-control w-25 mx-auto" type="password" name="" id="" placeholder="Password" required />
+                    <input className="form-control w-50  mx-auto" type="password" name="" id="" placeholder="Password" required />
                     <br />
-                    <input  className="form-check-input me-2 " type="checkbox" value="" id="flexCheckChecked" />
-                    <label class="form-check-label" htmlFor="flexCheckChecked">
-                        Already Registered ?
-                    </label>
-                    <span className="ms-2 text-danger">For New User ? <NavLink to="/register">Create Account</NavLink></span>
-
+                   
+                    <button  className="btn btn-primary px-5" >Please Login</button>
                     <br />
-                    <input  className="form-control w-25 mx-auto mt-3 bg-info" type="submit" value="Submit" />
                 </from>
                 <button onClick={handleGoogleLogin} className="my-3 mx-auto btn bg-primary px-4"><span className="text-danger me-3
                 "><FontAwesomeIcon icon={faGoogle} /></span>   Google LogIn</button>

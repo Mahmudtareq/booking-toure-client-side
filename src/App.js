@@ -15,6 +15,7 @@ import MyOrder from './components/MyOrder/Myorder';
 
 import ShowAllServices from './components/ShowAllServices/ShowAllServices';
 import PrivateRoute from './components/PrivateRoute/PrivateRoute';
+import ManageOrder from './components/ManageOrder/ManageOrder';
 
 function App() {
   return (
@@ -37,6 +38,9 @@ function App() {
           <Route exact path="/addService">
             <AddService></AddService>
           </Route>
+          <PrivateRoute path="/manageOrder">
+            <ManageOrder></ManageOrder>
+          </PrivateRoute>
           <PrivateRoute exact path="/myOrder/:serviceId">
             <MyOrder></MyOrder>
           </PrivateRoute>

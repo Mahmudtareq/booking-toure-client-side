@@ -12,18 +12,23 @@ const ShowAllServices = () => {
         .then(data=>setServices(data));
     },[])
     const handleDelete = id=>{
-        const url =`https://arcane-atoll-13935.herokuapp.com/services/${id}`;
-        fetch(url,{
-            method:"DELETE"
-        })
-        .then(res =>res.json())
-        .then(data =>{
-            if(data.deletedCount >0){
-                alert('Successfully Deleted')
-                const  remaining = services.filter(service =>service._id !==id);
-                setServices(remaining);
-            }
-        })
+        const proceed = window.confirm('Are you Sure ,You Wnt to Delete?');
+        if(proceed){
+            const url =`https://arcane-atoll-13935.herokuapp.com/services/${id}`;
+            fetch(url,{
+                method:"DELETE"
+            })
+            .then(res =>res.json())
+            .then(data =>{
+                if(data.deletedCount >0){
+                    alert('Successfully Deleted')
+                    const  remaining = services.filter(service =>service._id !==id);
+                    setServices(remaining);
+                }
+            });
+
+        }
+       
     }
     return (
         <div>

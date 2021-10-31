@@ -17,8 +17,8 @@ const Banner = () => {
         alt="First slide"
         />
         <Carousel.Caption>
-        <h3>First slide label</h3>
-        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+        <h1 className="text-white">Your Journey Begins Here</h1>
+        <p className="text-info fs-4">Where You Like to go ?</p>
         </Carousel.Caption>
   </Carousel.Item>
             <Carousel.Item interval={500}>
@@ -28,8 +28,12 @@ const Banner = () => {
                 alt="Second slide"
                 />
                 <Carousel.Caption>
-                <h3>Second slide label</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <h1 fs-1> Explore
+                    <br />
+                    Your Travel
+
+                </h1>
+                <p>Discover your next great adventure, become an explorer to get started</p>
                 </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
@@ -39,8 +43,10 @@ const Banner = () => {
                 alt="Third slide"
                 />
                 <Carousel.Caption>
-                <h3>Third slide label</h3>
-                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                <h1>WELCOME 
+                      <small>  To The Travel</small>
+                </h1>
+                <p>Where Would You Like To Go ?</p>
                 </Carousel.Caption>
             </Carousel.Item>
 </Carousel>

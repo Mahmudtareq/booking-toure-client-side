@@ -16,9 +16,9 @@ const Contact = () => {
                 </div>
             </div>
     <div>
-        <div className="container overflow-hidden">
-            <div className="row gx-4 shadow-lg">
-                <div className="col-4">
+        <div className="container  overflow-hidden">
+            <div className="row gx-4  shadow-lg">
+                <div className="col-lg-4 col-12 mb-3">
                 <div className="p-3 border bg-light">
                     <h2>Address</h2>
                     <p>31 park street, 5th Avenue,
@@ -26,7 +26,7 @@ const Contact = () => {
                 </div>
                 </div>
 
-                <div className="col-4 ">
+                <div className="col-12 col-lg-4 mb-3 ">
                 <div className="p-3 border bg-light">
                     <h2>Phone</h2>
                     <div>
@@ -36,7 +36,7 @@ const Contact = () => {
                 </div>
                 </div>
 
-                <div className="col-4">
+                <div className="col-12 col-lg-4">
                 <div className="p-3 border bg-light">
                     <h2>Email</h2>
                    

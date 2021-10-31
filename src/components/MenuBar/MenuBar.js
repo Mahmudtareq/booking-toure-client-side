@@ -23,7 +23,7 @@ const MenuBar = () => {
                     <NavDropdown title="Services" id="basic-nav-dropdown">
                     <NavDropdown.Item as={Link}  to ="/addService">AddService</NavDropdown.Item>
                     <NavDropdown.Item as={Link} to="/showAllServices">ShowAllServices</NavDropdown.Item>
-                    <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
+                    <NavDropdown.Item as={Link} to="/manageOrder">ManageOrder</NavDropdown.Item>
                     </NavDropdown>
                     {/* dropdown end */}
                     <Nav.Link as={Link} to="/contact">Contact Us</Nav.Link>
