@@ -1,10 +1,12 @@
 import { useEffect, useState } from "react";
 import { Card } from "react-bootstrap";
 import { useParams } from "react-router";
+import useAuth from "../../hooks/useAuth";
 import Footer from "../Footer/Footer";
 import MenuBar from "../MenuBar/MenuBar";
 
 const Myorder =()=>{
+    const {user} = useAuth();
     const {serviceId} = useParams();
     const [service , setService] =useState({})
     useEffect(()=>{
@@ -40,9 +42,9 @@ const Myorder =()=>{
                 <div className="col-lg-6 col-12">
                     <h2 className="text-primary mb-4">Book This Tour</h2>
                     <form>
-                        <input className="form-control" type="text" name="" id="" placeholder="Your Name" />
+                        <input className="form-control" type="text" id="" placeholder="Your Name" value={user.displayName} />
                         <br />
-                        <input className="form-control" type="email" name="" id="" placeholder="Your Email" />
+                        <input className="form-control" type="email" name="" id="" placeholder="Your Email" value={user.email}/>
                         <br />
                         <input className="form-control" type="text" name="" id="" placeholder="Your Phone" />
                         <br />

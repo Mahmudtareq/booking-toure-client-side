@@ -12,8 +12,9 @@ import Login from './components/LoginPage/Login';
 import AuthProvider from './context/AuthProvider';
 import AddService from './components/AddService/AddService';
 import MyOrder from './components/MyOrder/Myorder';
-import PrivateRoute from './components/LoginPage/PrivateRoute/PrivateRoute';
+
 import ShowAllServices from './components/ShowAllServices/ShowAllServices';
+import PrivateRoute from './components/PrivateRoute/PrivateRoute';
 
 function App() {
   return (
@@ -39,9 +40,9 @@ function App() {
           <PrivateRoute exact path="/myOrder/:serviceId">
             <MyOrder></MyOrder>
           </PrivateRoute>
-          <Route path ="/showAllServices">
+          <PrivateRoute path ="/showAllServices">
             <ShowAllServices></ShowAllServices>
-          </Route>
+          </PrivateRoute>
           <Route exact path="/login">
             <Login></Login>
           </Route>

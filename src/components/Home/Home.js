@@ -7,9 +7,15 @@ import OurServices from '../OurServices/OurServices';
 import feture1 from '../../image/services/feature-1.jpg';
 import feture2 from '../../image/services/feature-2.jpg';
 import feture3 from '../../image/services/feature-3.jpg';
+import useAuth from '../../hooks/useAuth';
+import { Spinner } from 'react-bootstrap';
 
 
 const Home = () => {
+    const {isLoading} = useAuth();
+    if(isLoading){
+        return <Spinner className="my-5" animation="border" variant="primary" />
+    }
     return (
         <div>
             <MenuBar></MenuBar>
