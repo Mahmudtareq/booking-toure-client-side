@@ -8,7 +8,9 @@ This project Clint side GitHub Link [Create React App](https://github.com/progra
 See Live Project Link [deployment](https://tour-and-traveling.web.app/) for more information
 
 ## `About This Project`
-* It is  Tour and Travel Agency Related project
+* This is a  Website where users can book a tour All over the world, for new users need  to create an account and users can also login in using a google account
+* Users also get facilities for hotel booking, tickets booking  also experiences a guide for safety purpose
+* Users can be booking a tour  also users can add a new tour place if their favorite place is not available
 # Technology Used in this project
 * React Js
 * Java Script
